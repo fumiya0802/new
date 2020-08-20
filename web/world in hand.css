@@ -1,0 +1,380 @@
+.parent
+{
+    position: relative;
+}
+.TEXT_OVERLAY
+{
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+}
+
+.mySlides
+{
+    height: 650px;
+    width: 100%;
+    margin-top: 3%;
+}
+.button_left
+{
+    position: relative;
+    bottom: 350px;
+    right: 692px;
+}
+.button_right
+{
+    position: relative;
+    bottom: 353px;
+    left: 690px;
+
+}
+
+
+h1 {
+    color: rgb(230, 30, 186);
+    margin-top: 5%;
+}
+#hot {
+    color: gray;
+}
+table {
+    margin-left: 9%;
+    margin-right: 9%;
+    padding: 2%;
+}
+td {
+    padding: 0.2%;
+}
+.photo { 
+    position: relative;
+    width: 100%;
+    height: 281.50px;
+}
+a {
+    text-decoration: none;
+    color: rgb(82, 79, 79);
+    font-weight: bolder;
+}
+#more_article {
+    padding-top: 3%;
+}
+.container {
+    position: relative; /* because it is the parent of .overlay */
+    width: 100%;
+}
+.container:hover .overlay{
+    height: 50%;
+}
+.overlay {
+    background-color: rgba(2, 2, 8, 0.9);
+    transition: .5s ease;
+    position: absolute; /* this is the child  of .container so position should be relate to it's parent so use absolute */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.text_overlay {
+    position: absolute;
+    color: white;
+    top: 20%;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+}
+.content {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(218, 200, 200);
+}
+.readmore {
+    font-size: 20px;
+    color: white;
+}
+@media (max-width: 1230px){
+    h1 {
+        color: rgb(230, 30, 186);
+        margin-top: 5%;
+    }
+    #hot {
+        color: gray;
+    }
+    table {
+        margin-left: 9%;
+        margin-right: 9%;
+        padding: 2%;
+    }
+    td {
+        padding: 0.2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo { 
+        position: relative;
+        width: 100%;
+        height: 450px;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(82, 79, 79);
+        font-weight: bolder;
+    }
+    #more_article {
+        padding-top: 3%;
+    }
+    .container {
+        position: relative; /* because it is the parent of .overlay */
+        width: 100%;
+    }
+    .container:hover .overlay{
+        height: 50%;
+    }
+    .overlay {
+        background-color: rgba(2, 2, 8, 0.9);
+        transition: .5s ease;
+        position: absolute; /* this is the child  of .container so position should be relate to it's parent so use absolute */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    .text_overlay {
+        position: absolute;
+        color: white;
+        top: 20%;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(218, 200, 200);
+    }
+    .readmore {
+        font-size: 25px;
+        color: white;
+    }
+}
+@media (max-width: 950px){
+    h1 {
+        color: rgb(230, 30, 186);
+        margin-top: 5%;
+    }
+    #hot {
+        color: gray;
+    }
+    table {
+        margin-left: 9%;
+        margin-right: 9%;
+        padding: 2%;
+    }
+    td {
+        padding: 0.2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo { 
+        position: relative;
+        width: 100%;
+        height: 330px;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(82, 79, 79);
+        font-weight: bolder;
+    }
+    #more_article {
+        padding-top: 3%;
+    }
+    .container {
+        position: relative; /* because it is the parent of .overlay */
+        width: 100%;
+    }
+    .container:hover .overlay{
+        height: 50%;
+    }
+    .overlay {
+        background-color: rgba(2, 2, 8, 0.9);
+        transition: .5s ease;
+        position: absolute; /* this is the child  of .container so position should be relate to it's parent so use absolute */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    .text_overlay {
+        position: absolute;
+        color: white;
+        top: 20%;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(218, 200, 200);
+    }
+    .readmore {
+        font-size: 25px;
+        color: white;
+    }
+}
+@media (max-width: 850px){
+    h1 {
+        color: rgb(230, 30, 186);
+        margin-top: 5%;
+    }
+    #hot {
+        color: gray;
+    }
+    table {
+        margin-left: 9%;
+        margin-right: 9%;
+        padding: 2%;
+    }
+    td {
+        padding: 0.2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo { 
+        position: relative;
+        width: 100%;
+        height: 280px;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(82, 79, 79);
+        font-weight: bolder;
+    }
+    #more_article {
+        padding-top: 3%;
+    }
+    .container {
+        position: relative; /* because it is the parent of .overlay */
+        width: 100%;
+    }
+    .container:hover .overlay{
+        height: 50%;
+    }
+    .overlay {
+        background-color: rgba(2, 2, 8, 0.9);
+        transition: .5s ease;
+        position: absolute; /* this is the child  of .container so position should be relate to it's parent so use absolute */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    .text_overlay {
+        position: absolute;
+        color: white;
+        top: 20%;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(218, 200, 200);
+    }
+    .readmore {
+        font-size: 25px;
+        color: white;
+    }
+}
+@media (max-width: 500px){
+    h1 {
+        color: rgb(230, 30, 186);
+        margin-top: 5%;
+    }
+    #hot {
+        color: gray;
+    }
+    table {
+        margin-left: 9%;
+        margin-right: 9%;
+        padding: 2%;
+    }
+    td {
+        padding: 0.2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo { 
+        position: relative;
+        width: 100%;
+        height: 220px;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(82, 79, 79);
+        font-weight: bolder;
+    }
+    #more_article {
+        padding-top: 3%;
+    }
+    .container {
+        position: relative; /* because it is the parent of .overlay */
+        width: 100%;
+    }
+    .container:hover .overlay{
+        height: 50%;
+    }
+    .overlay {
+        background-color: rgba(2, 2, 8, 0.9);
+        transition: .5s ease;
+        position: absolute; /* this is the child  of .container so position should be relate to it's parent so use absolute */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    .text_overlay {
+        position: absolute;
+        color: white;
+        top: 10%;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(218, 200, 200);
+    }
+    .readmore {
+        font-size: 25px;
+        color: white;
+    }
+}
+

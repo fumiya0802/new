@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+
+/*The :root CSS pseudo-class matches the root element of
+ a tree representing the document. 
+ In HTML, :root represents the <html> element 
+ and is identical to the selector html, 
+ except that its specificity is higher.*/
+
+/* https://color.adobe.com/create */
+/* base color */
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+	--main-color: #10C26C;
+	--accent-color: #9625CC;
+	--dark-color: #157547;
+	--text-bright-color: #fff;
+}
+
+html,body{
+	font-family: 'Open Sans',sans-serif;
+	margin: 0; /* as big as possible fitting frame */
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.navigation{
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	height:10vh ;
+}
+.navigation_menu1{
+	display: block;
+}
+.navigation_menu1 ul{
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.navigation li{
+	list-style: none;
+}
+.navigation a{
+	text-decoration: none !important;
+    padding: 10px;
+}
+.navigation a:hover {
+	color: var(--accent-color)
+}
+
+/* Contents A Hero-image */
+.conA{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* adjusting top and bottom */
+	justify-content: center; /* adjusting right and left */
+	height: 90vh; /* the hight of each device's display. */
+	min-height: 450px;
+	color: var(--text-bright-color);
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3));
+	background-position: center;
+	background-size: cover; /* automatically adjusting a size of img fitting frame.*/
+	/*color: #fff;
+	color: var(--text-bright-color);
+	text-align: center;*/
+
+}
+
+li{
+display: inline;
+}
+
+
+slider {
+
+display: block;
+width: 100%;
+height: 100%;
+background-color: #1f1f1f;
+overflow: hidden;
+box-sizing: border-box;
+position: relative;
+}
+
+slider > *{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-color: #1f1f1f;
+	animation: slide 12s infinite;
+	overflow: hidden;
+	box-sizing: border-box;	
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+slide:nth-child(1){
+	left: 0%;
+	animation-delay: -1s;
+	background-image: url(hero-top.jpg);
+	background-size: cover;
+	background-position: center;
+	
+}
+
+slide:nth-child(2){
+	animation-delay: 2s;
+	background-image: url(Nemba.jpg);
+	background-size: cover;
+	background-position: center;
+	
+}
+slide:nth-child(3){
+
+	animation-delay: 5s;
+	background-image: url(Dotombori.jpg);
+	background-size: cover;
+	background-position: center;
+	
+}
+slide:nth-child(4){
+	left: 0%;
+	animation-delay: 8s;
+	background-image: url(Kobe.jpg);
+	background-size: cover;
+	background-position: center;
+	
+}
+
+@keyframes slide {
+	0% { left: 100%; width: 100%;}
+	5% { left: 0%;}
+	25% { left: 0%;}
+	30% { left: -100%; width: 100%;}
+	30.0001% { left: -100%; width: 0%;}
+	100%{ left: 100%; width: 0%;}
+}
+
+
+/* .class selector{...} let adapt only in same class. */
+.conA h1{
+font-family: 'Times New Roman', Times, serif;
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 15vw; /* 15vw = 15% of screensize of every devices*/
+letter-spacing: 0.0em; /* 1 em = 1 font-size */
+
+}
+
+.conA p{
+margin-top: 0;
+margin-bottom: 0;
+font-size: 18px;
+
+}
+
+/* making a link buttom */
+.conA a{
+	display: inline-block;
+	margin: 20px; /* sapce of between content and outside*/
+	padding: 10px 30px; /*space of inside of block*/
+	border: solid 3px currentColor;
+	border-radius: 1	px;
+	background-color: 0,0;
+
+	font-size: 14px;
+	text-decoration: none; /* delete a default underline */
+	
+
+}
+
+/* An event that the cursol is crossing on buttom. */
+.conA a:hover {
+	background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+	
+}
+
+/* @media defines conditions and behavior under them.
+If the display size is going to be larger than 768px,
+it will be applied priority */
+@media (min-width: 768px){
+	.conA h1{
+		font-size: 115px;
+	}
+
+	.conA p{font-size: 24px;
+	}
+}
+
