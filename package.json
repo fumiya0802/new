@@ -1,0 +1,36 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:RyujiOdaJP/new.git",
+  "author": "Ryuji Oda <ryuji.oda@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "echo 100",
+    "commit": "git cz",
+    "readme": "npx readme-md-generator",
+    "lint": "npx eslint ./*.js",
+    "gibo": "gibo dump Node VisualStudioCode >> .gitignore"
+  },
+  "devDependencies": {
+    "commitizen": "4.1.2",
+    "cz-emoji": "1.2.1",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "readme-md-generator": "1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
+  },
+  "dependencies": {
+    "gibo": "^0.1.0"
+  }
+}
