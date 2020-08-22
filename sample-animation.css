@@ -1,0 +1,102 @@
+/* General */
+/* header */
+header {
+  background-color: black;
+  padding: 20px;
+}
+
+/* main */
+main h2 {
+  font-family: "Yu Mincho Light", "YuMincho Light", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 78.3px;
+  font-weight: 200;
+  line-height: 1.06667em;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+main h2 em {
+  font-size: 135px;
+  line-height: 1.06667em;
+  font-style: inherit;
+}
+
+/* TOP visual */
+.visual {
+  position: relative;
+  /* margin-top: 76px; */
+  height: calc(100vh - 76px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visual::before {
+  background-image: url(https://cweb.canon.jp/eos/your-eos/product/eosr/r5/assets/img/visual-bg.jpg);
+  background-color: initial;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* background: url(../img/visual-bg.jpg) center center no-repeat; */
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.loaded::before, .intro.loaded {
+  opacity: 1;
+}
+
+/* intro */
+.intro {
+  height: 100vh;
+  display: block;
+  background: url(https://cweb.canon.jp/eos/your-eos/product/eosr/r5/assets/img/highquality-intro-bg.jpg) center center no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1.5s;
+  backface-visibility: hidden;
+}
+
+.inner {
+  color: white;
+  opacity: 1;
+  animation: bgDown 2s forwards;
+}
+
+/* tablet */
+@media (max-width: 767px) {
+  .visual {
+    height: calc(100vh - 64px);
+  }
+
+  .visual::before {
+    background-image: url(https://cweb.canon.jp/eos/your-eos/product/eosr/r5/assets/img/visual-bg-sp.jpg);
+  }
+
+  header>a>img {
+    width: 70px;
+  }
+
+  main h2 {
+    font-size: 34px;
+    font-size: 9.06666vw;
+  }
+  main h2 em {
+    font-size: 54px;
+    font-size: 14.39999vw;
+  }
+}
+
+@keyframes bgDown {
+	0% {
+		background: rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		background: rgba(0, 0, 0, 0.3);
+	}
+}
