@@ -9,7 +9,7 @@
     "start": "echo 100",
     "commit": "git cz",
     "readme": "npx readme-md-generator",
-    "lint": "npx eslint ./*.js",
+    "lint": "npx eslint ./*.js --fix",
     "gibo": "gibo dump Node VisualStudioCode >> .gitignore"
   },
   "devDependencies": {
